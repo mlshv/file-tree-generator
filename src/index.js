@@ -13,30 +13,6 @@ function App() {
       title: 'root',
       isDirectory: true,
       expanded: true,
-      children: [
-        {
-          title: 'hello',
-          isDirectory: true,
-          expanded: true,
-          children: [
-            {
-              title: 'bar.js',
-            },
-            {
-              title: 'baz.js',
-            },
-            {
-              title: 'hello2',
-              isDirectory: true,
-              expanded: true,
-              children: [{ title: 'Маруся.jpg' }],
-            },
-          ],
-        },
-        {
-          title: 'world.js',
-        },
-      ],
     },
   ])
 
