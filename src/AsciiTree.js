@@ -40,7 +40,7 @@ function renderChildPrefix(
 
   return (
     parentPrefix +
-    (parentHasNextSibling ? '|' : extraSpaceForChildOnly) +
+    (parentHasNextSibling ? '│' : extraSpaceForChildOnly) +
     childIndent
   )
 }

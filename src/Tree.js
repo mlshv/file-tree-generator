@@ -31,6 +31,7 @@ const renderTitle = (node, setTreeData, treeData, path) => {
 const renderNodeButtons = (node, setTreeData, treeData, path) => {
   const rmButton = (
     <button
+      className="tree-button"
       key="remove"
       onClick={() =>
         setTreeData(
@@ -48,6 +49,7 @@ const renderNodeButtons = (node, setTreeData, treeData, path) => {
 
   const mkdirButton = (
     <button
+      className="tree-button"
       onClick={() =>
         setTreeData(
           addNodeUnderParent({
@@ -69,6 +71,7 @@ const renderNodeButtons = (node, setTreeData, treeData, path) => {
 
   const touchButton = (
     <button
+      className="tree-button"
       onClick={() =>
         setTreeData(
           addNodeUnderParent({
@@ -106,6 +109,7 @@ function Tree({ value: treeData, onChange: setTreeData }) {
         })}
       />
       <button
+        className="root-button"
         onClick={() =>
           setTreeData([
             ...treeData,
@@ -117,6 +121,20 @@ function Tree({ value: treeData, onChange: setTreeData }) {
         }
       >
         mkdir
+      </button>
+      <button
+        className="root-button"
+        onClick={() =>
+          setTreeData([
+            ...treeData,
+            {
+              title: '',
+              isDirectory: false,
+            },
+          ])
+        }
+      >
+        touch
       </button>
     </div>
   )

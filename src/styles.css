@@ -27,3 +27,16 @@ h2 {
 .rstcustom__rowLabel {
   padding-right: 4px;
 }
+
+.root-button {
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
+.root-button + .root-button {
+  margin-left: 4px;
+}
+
+.rstcustom__toolbarButton + .rstcustom__toolbarButton {
+  margin-left: 4px;
+}
